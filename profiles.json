@@ -1,0 +1,675 @@
+{
+  "_comment": "Textové profily coinů: k čemu je coin zamýšlen a jestli to naše měření potvrzuje. Klíč je CoinGecko id. Generuje tool/build_profiles.dart, který deklaraci projektu konfrontuje s naměřenými čísly - proto to není převyprávěný marketingový popis. Pole \"evidence\" říká, jak je odstavec podložený: documented (popis i měření), thin (jedno z toho), none (nic, text pak jen konstatuje, že informace nejsou dostupné). Ruční úprava textu je v pořádku a přežije, dokud profil nezestárne nad --max-age.",
+  "version": 1,
+  "profiles": {
+    "avalanche-2": {
+      "symbol": "AVAX",
+      "purpose": "A smart contract platform whose distinguishing idea is subnets, letting an institution or a game run a chain with its own rules while still settling to the main network. That has drawn enterprise and gaming projects more than retail DeFi. In its segment it sits mid-field, with $476M of locked value and $1.5B of stablecoins issued, an order of magnitude below Solana but ahead of most. Development is steady at 60 commits in four weeks from 219 contributors, and the community remains large at 496k watchlists.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "binancecoin": {
+      "symbol": "BNB",
+      "purpose": "The native token of Binance, the largest exchange, where it pays fee discounts, and the gas token of BNB Chain, where it pays for transactions. That dual role is unusual and it works. BNB Chain holds $5.4B of locked value and $13.9B of issued stablecoins, third among all chains we track, behind only Ethereum and Tron, while scheduled burns shrink the supply over time. Its long-term price record is the strongest we measure at 100% a year since 2017, though it follows the exchange as much as the chain.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "bitcoin": {
+      "symbol": "BTC",
+      "purpose": "Digital gold: the original cryptocurrency and still the reference asset the rest of the market is priced against, held as a long-term store of value rather than spent. It leads its segment on every measure we have, first in market capitalisation, first in trading volume, and first in search interest across roughly 8000 coins. The fundamentals behind it are the strongest here as well, with 303 commits in the last four weeks from 342 contributors, the widest development base we track anywhere. The 21 million cap has never moved.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "bitcoin-cash": {
+      "symbol": "BCH",
+      "purpose": "A 2017 fork of Bitcoin that raised the block size so the coin would stay cheap to spend, taking the side of payments over store of value. The market rather than the debate settled which way that went. Within the payments segment it now sits far behind, with $42k of locked value and no commits on the node in the last four weeks. Real liquidity and name recognition remain, twenty-ninth in search interest, but the price has returned 2% a year since 2019 against Bitcoin's 38%.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "cardano": {
+      "symbol": "ADA",
+      "purpose": "A smart contract platform distinguished by process rather than by product: every major change is peer-reviewed before it ships, which has made development careful and slow. In its own segment it sits well behind the leaders, with $61.7M of locked value and $65.2M of stablecoins against Ethereum's billions, on $38k of protocol revenue over thirty days. What it does have is one of the largest and most durable communities on our list at 963k watchlists, and steady development at 67 commits in four weeks.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "chainlink": {
+      "symbol": "LINK",
+      "purpose": "The standard oracle network and the dominant one by a wide margin. Blockchains cannot read anything outside themselves, so Chainlink pays independent node operators to fetch prices and other external data and agree on a single answer contracts can rely on, with LINK paying those operators and staked as collateral they lose for reporting badly. Chain-level metrics do not apply to infrastructure like this. What does apply is its reach across dozens of chains, an active codebase at 162 commits in four weeks, and eighth place in search interest.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "dogecoin": {
+      "symbol": "DOGE",
+      "purpose": "The original meme coin and still the largest, a 2013 Litecoin fork made as a parody, with one-minute blocks, tiny fees, and a supply that grows forever. It states no utility, so attention and liquidity are the whole story, and by that measure it leads its segment comfortably: 875k watchlists and eleventh place in search interest across roughly 8000 coins. Development has all but stopped at 1 commit in four weeks. The price has still compounded 55% a year since 2019, carried by recognition rather than use.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "ethereum": {
+      "symbol": "ETH",
+      "purpose": "The dominant smart contract platform, and the chain most of decentralised finance actually runs on. Where Bitcoin stores value, Ethereum executes code that anyone can deploy, with ETH paying for the computation. Its lead in its own segment is not close: $48.8B of locked value and $147.9B of stablecoins issued on the chain, both several times any competitor we track. Development is broad and steady across 444 contributors, and the community is the second largest on our list. The price has compounded 26% a year since 2017.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "hedera-hashgraph": {
+      "symbol": "HBAR",
+      "purpose": "An enterprise ledger governed by a council of large corporations including Google, IBM, Boeing and Deutsche Telekom rather than by token holders, selling timestamping and ordered consensus as an auditable service that business systems can log events to. It competes for corporate blockchain work rather than for open finance, a segment where adoption is slow and largely private. The public figures stay small: $26.1M of locked value, $30.3M of stablecoins, and $313k of protocol revenue over a year. No public code repository is linked, so development is not measured.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "litecoin": {
+      "symbol": "LTC",
+      "purpose": "One of the oldest cryptocurrencies still running, a 2011 Bitcoin fork with four times faster blocks and an 84 million cap, built for smaller everyday payments. It has worked exactly as designed for fourteen years, which is also its difficulty: newer chains cover the same ground more cheaply, and we record only $774k of locked value and $11k of protocol revenue over thirty days. Recognition and liquidity remain, twenty-sixth in search interest, but the price is down 19% a year since 2017.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "monero": {
+      "symbol": "XMR",
+      "purpose": "The other established privacy coin, and the stricter of the two: where comparable systems make shielding optional, every Monero transaction conceals sender, receiver, and amount by default. That has made it the practical standard for people who need financial privacy, and it also means almost nothing about its usage is measurable from outside. What is measurable is the project itself, and it is healthy, with 197 commits in four weeks from 341 contributors. It ranks fifteenth by market capitalisation while sitting only 265th in search interest.",
+      "evidence": "thin",
+      "sources": [
+        "github",
+        "web",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "ripple": {
+      "symbol": "XRP",
+      "purpose": "A settlement network aimed squarely at cross-border banking, where XRP acts as a bridge asset so neither institution has to pre-fund an account abroad. Transfers finalise in seconds and the ledger has run without interruption since 2012. In the payments segment it is the best known name and fourth in search interest across roughly 8000 coins, though its measurable on-chain footprint stays modest at $41M of locked value and $1.0B of stablecoins. Development is active, 120 commits in four weeks from 170 contributors.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "shiba-inu": {
+      "symbol": "SHIB",
+      "purpose": "The second largest meme coin, launched on Ethereum and carried by an unusually large and organised community. Unlike Dogecoin it has claimed to grow into a working financial network with its own exchange and its own layer 2, Shibarium, but none of that appears in what we measure: no locked value, no protocol revenue, and no public code repository. Within its own segment it holds second place on attention alone, 818k watchlists, while the price is down 21% a year since 2021.",
+      "evidence": "thin",
+      "sources": [
+        "coingecko",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "solana": {
+      "symbol": "SOL",
+      "purpose": "The strongest challenger to Ethereum among smart contract platforms, built for speed: one unified ledger, parallel execution, sub-second finality, and fees measured in fractions of a cent. It sits second in its segment on the numbers that matter, $5.8B locked and $15.7B of stablecoins issued, and second only to Tron on protocol revenue at $21.8M in thirty days. Development is the most intense on our list at 371 commits in four weeks. Its weak point has been network reliability, and volatility remains high.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "stellar": {
+      "symbol": "XLM",
+      "purpose": "A payment network built around the currency-exchange problem: regulated entities called anchors hold real deposits and issue matching credits, and XLM bridges between them so a transfer can cross currencies in seconds. It shares the cross-border payments segment with XRP and sits second there, with $234M of locked value and $866M of stablecoins issued, meaningful figures for a payment rail. Its focus is remittances and tokenised assets rather than DeFi. Development is quiet at 24 commits in four weeks.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "sui": {
+      "symbol": "SUI",
+      "purpose": "A newer smart contract platform from former Meta engineers, built on an object-centric data model that lets unrelated transactions execute in parallel, with the Move language handling assets safely by design. For a chain listed only in 2023 it has established itself quickly: $445M of locked value, $399M of stablecoins issued, and the busiest young codebase on our list at 155 commits in four weeks from 409 contributors. Interest runs ahead of size, thirteenth in search against thirty-third by market capitalisation.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "the-open-network": {
+      "symbol": "GRAM",
+      "purpose": "A general-purpose chain originally designed at Telegram and now developed independently, built for very cheap transfers at messenger scale and reaching users through wallet integration rather than through exchanges. Among smart contract platforms it is a mid-sized player: $49.9M of locked value, $757M of stablecoins issued, and $2.4M of protocol revenue over the past year. Development continues at 38 commits in four weeks, though from a narrow base of 66 contributors. We hold no price history for it, so its long-term record is missing from the score.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "web",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "tron": {
+      "symbol": "TRX",
+      "purpose": "The main settlement rail for stablecoin transfers, above all USDT, where fees low enough for small remittances have made it a default across Asia and Latin America. In that niche it dominates: $93.7B of stablecoins issued on the chain, second only to Ethereum, and $362M of protocol revenue over the past year, the highest figure of any project we track. The tradeoff is decentralisation, with 27 elected validators and only 6 commits on the node in four weeks. It is used far more heavily than it is discussed.",
+      "evidence": "documented",
+      "sources": [
+        "coingecko",
+        "github",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "uniswap": {
+      "symbol": "UNI",
+      "purpose": "The dominant decentralised exchange and the protocol that made automated market making the standard design: pooled assets priced by formula instead of an order book, running without an operator. It leads the DEX segment by trading volume across the chains it is deployed on. UNI itself is the governance token, so holders vote on the treasury and on upgrades rather than collecting the trading fees, which is worth knowing before reading anything into its price. Chain-level metrics do not apply to a protocol, and our own DEX volume figure is missing.",
+      "evidence": "thin",
+      "sources": [
+        "coingecko",
+        "github",
+        "web",
+        "metrics"
+      ],
+      "generated": "2026-09-01"
+    },
+    "zcash": {
+      "symbol": "ZEC",
+      "purpose": "One of the two established privacy coins, and the one built on zero-knowledge proofs: a transaction can be verified without revealing sender, receiver, or amount, under the same 21 million cap as Bitcoin. By design most of its usage cannot be measured from outside, so the segment is judged on standing and on development instead. Both are strong here, with 223 commits in four weeks and sixth place in search interest across roughly 8000 coins, well above its eleventh place by market capitalisation.",
+      "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "metrics"
+    ],
+    "generated": "2026-09-01"
+  },
+  "near": {
+    "symbol": "NEAR",
+    "purpose": "A sharded smart-contract chain whose current emphasis is chain abstraction: a NEAR account and its contracts can sign transactions on other networks, while NEAR itself executes applications. That makes it a general-purpose platform rather than an AI product on its own. It is a mid-sized chain in this list, with $118M locked and $104M of stablecoins issued, at market-cap rank thirty-six. Development is active at 130 commits from 246 contributors in four weeks, and its 334k watchlists show much more attention than a small chain.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "tether-gold": {
+    "symbol": "XAUT",
+    "purpose": "A tokenised-gold product: each XAUt represents ownership of one fine troy ounce on an allocated physical gold bar, rather than a chain or a protocol with its own network activity. Its job is to make that claim transferable on public blockchains. At market-cap rank thirty-eight and with $286M of daily volume, it is one of the larger tokenised-gold instruments in this list, though only 34k users watch it. Our pipeline records $3.9M of annual protocol revenue but no public code repository or chain metrics, so it cannot test the backing itself.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "ripple-usd": {
+    "symbol": "RLUSD",
+    "purpose": "A dollar stablecoin issued by Ripple for payments and settlement, redeemable one-for-one against segregated cash and cash-equivalent reserves. It is native to XRP Ledger and Ethereum, so its purpose is price stability for transfers rather than price exposure to a network. It has already reached market-cap rank forty-one and $136M of daily volume, but its attention remains modest at rank 715 and 16k watchlists. Our snapshot carries no reserve, code, or chain-usage measure for the token, so the data confirms distribution and liquidity, not the issuer's reserve claim.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "bittensor": {
+    "symbol": "TAO",
+    "purpose": "A blockchain-coordinated market for machine-learning services, where independent subnets supply work such as inference or storage and validators score it; TAO rewards the participants and secures the network. It competes in AI and infrastructure rather than in ordinary DeFi. The measurable chain footprint is still limited at $46M locked, but the project is unusually visible for its size: market-cap rank forty-four versus search rank twenty-four. Its codebase is active at 149 commits from 86 contributors in four weeks, while 199k watchlists show a sizable interested audience.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "aave": {
+    "symbol": "AAVE",
+    "purpose": "A decentralised lending market: suppliers place assets in pools and borrowers post collateral, while AAVE governs changes to the protocol. It competes with other on-chain credit protocols, where fees and revenue matter more than a chain's TVL. Our snapshot records $81k of revenue over thirty days and $1.6M over a year, plus two audits on record, but no comparable protocol TVL. The linked V3 repository had no commits in the last four weeks, although it has 19 contributors; that is a narrow development signal rather than evidence that the wider protocol has stopped.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "aster-2": {
+    "symbol": "ASTER",
+    "purpose": "A decentralised perpetuals exchange, with an order-book mode for derivatives trading across BNB Chain, Ethereum, Solana, and Arbitrum. ASTER is the token attached to that venue rather than a base-layer coin. The available measurements do not record the exchange's fees, revenue, or DEX volume, so they cannot establish its position among perpetuals venues. They do show real market attention: $192M of daily token volume and search rank twenty-one. The linked documentation repository logged four commits from eleven contributors in four weeks, a modest but current public development signal.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "pax-gold": {
+    "symbol": "PAXG",
+    "purpose": "A tokenised-gold claim issued by Paxos: one PAXG represents one fine troy ounce of allocated London Good Delivery gold, which makes fractional ownership and on-chain transfer possible. It belongs with real-world asset tokens, not smart-contract platforms. At market-cap rank forty-seven and with $186M of daily volume, it is a large instrument in this dataset, though search interest is only 172nd and 46k users watch it. The public contract repository has no recent commits; our data has no reserve measurement, so it cannot independently verify the allocated-gold claim.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "world-liberty-financial": {
+    "symbol": "WLFI",
+    "purpose": "The governance token of World Liberty Financial: its stated role is voting on the direction of the WLF protocol, not ownership, dividends, or a claim on company assets. That places it among governance tokens linked to DeFi and the USD1 stablecoin rather than among payment coins. The project has market-cap rank forty-nine, and our pipeline records $10.5M of protocol revenue in thirty days and $120.6M in a year. There is no public code repository in the snapshot, so those figures show recorded activity but do not let us assess the protocol's implementation or decentralisation.",
+    "evidence": "documented",
+    "sources": [
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "ondo-finance": {
+    "symbol": "ONDO",
+    "purpose": "A governance token for the Ondo DAO, whose documented remit includes Flux Finance, a lending market that accepts tokenised securities as collateral. It therefore sits in real-world-asset DeFi, not as a token that directly represents those securities. The linked public repository is explicitly a one-time code snapshot and its last push was in 2022, so its lack of recent commits says little about current development. Our pipeline records no protocol revenue or TVL for Ondo itself; the strongest measurable signal is its 222k watchlists despite search rank 103.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "morpho": {
+    "symbol": "MORPHO",
+    "purpose": "An open lending infrastructure built around isolated markets, where borrowers post collateral and lenders can use vaults whose curators allocate capital across markets. MORPHO governs this credit layer rather than a chain. The design gives each market its own oracle, collateral, and risk parameters instead of pooling all risk together. Our snapshot does not record Morpho revenue, TVL, audits, or a public code repository, so it cannot judge lending scale or implementation activity. It does show a $1.7B market capitalisation, search rank seventy-one, and comparatively limited attention at 22k watchlists.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "pump-fun": {
+    "symbol": "PUMP",
+    "purpose": "The token associated with Pump.fun, a Solana launchpad for creating and trading new tokens, especially meme coins. That makes it an exchange and issuance venue token rather than a meme coin with a standalone use case. Its market measures show attention and liquidity rather than platform use: market-cap rank fifty-two, $217M of daily volume, and nineteenth place in search interest. The snapshot has no project description, code repository, DEX volume, or protocol revenue, so it cannot test how much of the launchpad's activity accrues to PUMP or its token holders.",
+    "evidence": "documented",
+    "sources": [
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "ethena": {
+    "symbol": "ENA",
+    "purpose": "Ethena's governance token, used to vote on critical protocol decisions and to elect risk-committee members; it is not the dollar-linked asset the protocol issues. It belongs with stablecoin and DeFi governance rather than with payment tokens. The snapshot records no revenue, TVL, reserve data, code repository, or audits for the protocol, so it cannot measure its stablecoin operation or governance quality. What it does record is substantial token liquidity at $715M a day, while search interest is only 270th and 114k users keep it on watchlists.",
+    "evidence": "documented",
+    "sources": [
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "sky": {
+    "symbol": "SKY",
+    "purpose": "The governance token of Sky Protocol, the renamed and upgraded Maker protocol, where token holders govern a system built around the USDS stablecoin. Its function is protocol control rather than a direct claim on the stablecoin's dollar reserves. The dataset offers little evidence for how that system is performing: it records no revenue, TVL, audits, or public repository. Market attention is also limited for a token at market-cap rank fifty-four, with $10.5M of daily volume, search rank ninety, and fewer than 10k watchlists. The summary therefore confirms the role but not the protocol's operating scale.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "pepe": {
+    "symbol": "PEPE",
+    "purpose": "A meme token built around Pepe the Frog, with no stated operating service beyond the culture and attention attached to the meme. That makes attention and liquidity the meaningful measures, not TVL or protocol revenue. By those measures it is one of the largest meme coins in this list: market-cap rank fifty-five, search rank fourteen, 394k watchlists, and $315M of daily volume. There is no public repository or on-chain business metric in the snapshot. Its use case is therefore community recognition, while the data cannot show recurring usage beyond trading interest.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "polkadot": {
+    "symbol": "DOT",
+    "purpose": "A multichain security and interoperability network: specialised parachains connect to the relay chain, inherit its validator security, and exchange messages through XCM. DOT is used for network governance, staking, and access to core computation. The snapshot does not attribute chain TVL, stablecoins, or revenue to Polkadot, so it cannot measure adoption of that model directly. It does show a durable developer base of 90 commits from 382 contributors in four weeks and a large community at 636k watchlists. Its search rank of fifty-five closely matches market-cap rank fifty-six.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "worldcoin-wld": {
+    "symbol": "WLD",
+    "purpose": "The governance token connected to World ID and World Chain. World ID lets a person prove they are unique online through privacy-preserving proofs, with Orb verification providing its highest-assurance credential; WLD is not itself that identity proof. The associated chain remains small in the platform segment, with $33M locked and $17M of issued stablecoins at market-cap rank sixty. No public repository is linked in the snapshot, so development is not measured. Interest is middling as well, with search rank 104 and 102k watchlists.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "internet-computer": {
+    "symbol": "ICP",
+    "purpose": "A smart-contract platform that treats applications as canisters: WebAssembly code and persistent state executed and replicated by network subnets. Its ambition is to provide application hosting as well as ordinary blockchain transactions. In the platform segment, the measurable footprint is small at $14.5M locked and $3.9M of stablecoins issued, despite market-cap rank sixty-one. Development is unusually active at 298 commits from 159 contributors in four weeks. The contrast supports the project's technical activity, but not broad financial use of the chain.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "github",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "bfusd": {
+    "symbol": "BFUSD",
+    "purpose": "A Binance reward-bearing asset redeemable for a dollar stablecoin and usable as margin in a futures account, so its role is collateral plus account rewards rather than an independent payment network. Its almost flat price history is consistent with that design. It has reached market-cap rank sixty-four, but the public interest around it is thin: search rank 900 and only 414 watchlists, with $5.1M of daily volume. The snapshot has no code repository, reserve data, audit record, or chain metrics, so it cannot independently assess the reward mechanism or the redemption backing.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "united-stables": {
+    "symbol": "U",
+    "purpose": "A dollar-stablecoin listing for which the available project material supplies no stated purpose, reserve explanation, or public code repository. The nearly flat price history is compatible with a stablecoin, but it does not verify a peg or the assets behind it. Its market-cap rank is sixty-five and daily volume is $209M, while search rank 861 and 473 watchlists show very little public attention. Those figures establish exchange liquidity, not how the token is issued, redeemed, governed, or backed; the summary should remain deliberately limited until better primary material is available.",
+    "evidence": "thin",
+    "sources": [
+      "coingecko",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "lighter": {
+    "symbol": "LIT",
+    "purpose": "A decentralised derivatives venue whose stated technical distinction is verifiable order matching and liquidations, aimed at perpetual trading with exchange-like performance. LIT is therefore tied to a trading platform, not a base-layer network. The snapshot records no DEX volume, fees, revenue, audit, or public repository, so it cannot compare the venue's actual trading activity with other perpetual exchanges. It does show liquid token markets at $197M a day and search rank thirty-nine, although only 20k users have it on watchlists. The role is documented; the operating evidence is still thin.",
+    "evidence": "documented",
+    "sources": [
+      "coingecko",
+      "web",
+      "metrics"
+    ],
+    "generated": "2026-09-04"
+  },
+  "ethereum-classic": {
+    "symbol": "ETC",
+    "purpose": "The original Ethereum chain that retained proof-of-work after Ethereum moved to proof-of-stake. It remains a permissionless smart-contract platform, with ETC paying for execution and mining securing the ledger. Its platform use is very small in this dataset at $77k locked and $74k of stablecoins, despite market-cap rank sixty-nine. The linked public site recorded eight commits from 102 contributors in four weeks, while attention is limited at search rank 143. It preserves a distinct consensus model, but our metrics show little DeFi activity on the chain.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "polygon-ecosystem-token": {
+    "symbol": "POL",
+    "purpose": "The native token replacing MATIC in Polygon's Ethereum-scaling network. POL pays gas on Polygon PoS and is staked by validators, while the wider project aims to connect multiple chains around Ethereum. The chain is substantial in its segment, with $812M locked and $3.1B of issued stablecoins, although well behind Ethereum and the largest alternative platforms. It has strong public interest at search rank twenty-seven and 664k watchlists. No public repository is linked in this snapshot, so development activity is not measured here.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "quant-network": {
+    "symbol": "QNT",
+    "purpose": "The token used around Quant's Overledger platform, a service for building applications that connect more than one distributed-ledger network through a common interface. It belongs to interoperability infrastructure rather than to a chain with native DeFi. The snapshot records no chain TVL, protocol revenue, public repository, or audits, so it cannot measure whether the platform is being used by the applications it targets. QNT still has market-cap rank seventy-four and 132k watchlists, but search interest is only 721st, showing a specialised rather than broad retail audience.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "just": {
+    "symbol": "JST",
+    "purpose": "The governance token of JUST, a TRON-based DeFi system built around the USDJ stablecoin and collateralised lending. JST is therefore a protocol-control token, not the stablecoin itself or TRON's native payment coin. Our snapshot has no linked repository, revenue, TVL, audit, or DEX-volume figure for the protocol, leaving its operating scale unmeasured. It ranks seventy-six by market capitalisation but has only 16k watchlists and search rank 268. The role is documented, while the evidence for current use is thin.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "arbitrum": {
+    "symbol": "ARB",
+    "purpose": "An Ethereum layer-two rollup that executes transactions away from Ethereum and posts their results back to it; ARB governs parts of that network rather than paying ordinary transaction fees. It is one of the larger smart-contract platforms in the snapshot, with $1.4B locked and $3.2B of issued stablecoins. Development is visible but quiet in the linked documentation repository at three commits from 26 contributors in four weeks. Search rank twenty-two and 212k watchlists show that its market attention runs ahead of its rank seventy-eight by capitalisation.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "nexo": {
+    "symbol": "NEXO",
+    "purpose": "The token associated with Nexo's centrally operated crypto-finance service, whose products include lending, borrowing, and account rewards. It should be judged as a platform token rather than as a decentralised lending protocol, because its business activity does not appear as chain TVL or protocol fees. The snapshot records no public repository, audits, or operating metric, only market signals: rank eighty by capitalisation, $4.5M of daily volume, and 49k watchlists. Its documented role is clear, but this dataset cannot independently assess the service behind it.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "algorand": {
+    "symbol": "ALGO",
+    "purpose": "A general-purpose layer-one blockchain secured by pure proof of stake, where stake-weighted participants form the consensus committees and ALGO pays for network activity. Its technical focus is a fast base layer rather than a single DeFi application. The measurable financial footprint is small at $30M locked and $37M of stablecoins despite market-cap rank eighty-one. Development remains active at 33 commits from 114 contributors in four weeks, and 291k watchlists exceed its search rank of 161. The project is maintained, but the snapshot does not show broad on-chain capital use.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "cosmos": {
+    "symbol": "ATOM",
+    "purpose": "The token of the Cosmos Hub, which coordinates an interchain built around IBC messaging and can extend its validator security to consumer chains. ATOM is used for staking and governance of that hub; it is not a claim on every independent chain built with the Cosmos SDK. Our snapshot attributes only $110k of TVL to the Hub and no stablecoin issuance or revenue, so it does not demonstrate economic activity across the broader interchain. The linked repository is an old wallet project, making its zero recent commits unsuitable as a development measure. Community interest remains substantial at 335k watchlists.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "render-token": {
+    "symbol": "RENDER",
+    "purpose": "A token for the Render Network, which coordinates access to distributed GPU rendering and computing capacity rather than running a general-purpose financial chain. Its usefulness depends on work being supplied and completed by that network, not on chain TVL. The snapshot has no revenue, usage, public-repository, or audit measure for that activity, so it cannot verify demand for GPU jobs. It holds market-cap rank eighty-seven, with 257k watchlists and search rank 115, showing strong recognition but not measured network utilisation.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "dash": {
+    "symbol": "DASH",
+    "purpose": "A proof-of-work payment network that adds collateralised masternodes for services and governance alongside miners. DASH is intended for direct transfers, so payment activity and liquidity matter more than DeFi TVL. The snapshot records only $95k locked and no stablecoins or protocol revenue, which points to a small on-chain finance footprint. Development on the linked Tenderdash repository is active at 36 commits from 269 contributors in four weeks. Attention remains high for its size, with search rank thirty-three and 101k watchlists, but the data does not measure real payment volume.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "jupiter-exchange-solana": {
+    "symbol": "JUP",
+    "purpose": "The governance token of Jupiter, a Solana trading venue and swap aggregator that routes orders across liquidity sources. It belongs with decentralised exchanges, where fees and revenue are more useful than a chain's TVL. The pipeline records $3.5M of revenue in thirty days and $34.5M in a year, a meaningful operating signal for this segment, though its own DEX-volume field is missing. JUP ranks eighty-nine by capitalisation, has search rank sixty-four, and 137k watchlists. No public repository is linked, so development is not measured.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "pancakeswap-token": {
+    "symbol": "CAKE",
+    "purpose": "The governance and incentive token of PancakeSwap, a decentralised exchange that uses automated market-making pools for swaps and other DeFi products. CAKE should be assessed as an exchange token, not as a base-layer network. The available snapshot does not record PancakeSwap's fee, revenue, DEX volume, audits, or code activity, so it cannot establish the protocol's current trading position. It retains broad recognition at search rank forty-three and 260k watchlists, while market-cap rank is ninety-two. The purpose is clear; the operating evidence in this dataset is limited.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "filecoin": {
+    "symbol": "FIL",
+    "purpose": "A decentralised storage network where storage providers commit capacity and clients pay for storing data; FIL is used for those incentives and for network collateral. It is infrastructure rather than a general-purpose DeFi platform, so storage demand is the central question. The snapshot shows only $2.5M locked and $164k of issued stablecoins, but does record $45k of monthly and $2.3M of annual protocol revenue. Development is broad at twelve commits from 327 contributors in four weeks. That supports an active project, while our metrics still give only an indirect view of storage use.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "official-trump": {
+    "symbol": "TRUMP",
+    "purpose": "An official Donald Trump-themed meme token whose value proposition is attention, branding, and trading interest rather than a protocol service. As with other memes, TVL and revenue are not the relevant test. It is exceptionally visible at search rank eight, with 151k watchlists and $340M of daily volume, despite market-cap rank ninety-five. The snapshot has no public repository, audited operating system, or on-chain business metric. Its role is therefore fully explained by its public identity and liquidity; the data does not show a separate utility.",
+    "evidence": "documented",
+    "sources": ["coingecko", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "vechain": {
+    "symbol": "VET",
+    "purpose": "An enterprise-oriented blockchain that targets business data and supply-chain applications, with VET used for value transfer and network economics. It competes as a smart-contract platform, though its stated use is closer to business infrastructure than retail DeFi. The measurable chain footprint is very small at $1.2M locked and $10k of stablecoins. Development is active at 26 commits from 37 contributors in four weeks, and the community is large at 388k watchlists. The code activity supports ongoing maintenance, but the snapshot records limited financial activity on the chain.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "curve-dao-token": {
+    "symbol": "CRV",
+    "purpose": "The governance token of Curve, an automated market maker designed around efficient swaps between similarly priced assets, especially stablecoins. CRV belongs with exchange and liquidity protocols, where fee generation and trading volume would be the decisive evidence. Those figures are absent from this snapshot, as are audits and protocol TVL. The linked contract repository has no commits in the last four weeks, although ten contributors are recorded, which is too narrow to describe the whole project. Curve retains search rank seventy-three and 116k watchlists, but its current operating scale is not measured here.",
+    "evidence": "documented",
+    "sources": ["coingecko", "github", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "ether-fi": {
+    "symbol": "ETHFI",
+    "purpose": "The governance token of ether.fi, an Ethereum liquid-staking and restaking protocol. Users deposit ETH through the protocol and receive liquid representations, while ETHFI governs its direction; it is not itself the staked asset. The snapshot records no protocol TVL, revenue, audit, public repository, or staking measure, so it cannot test ether.fi's scale or how its rewards are produced. ETHFI has market-cap rank 102, $48M of daily volume, and 37k watchlists. Its function is documented, but the relevant operating evidence is absent.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "pudgy-penguins": {
+    "symbol": "PENGU",
+    "purpose": "A token attached to the Pudgy Penguins brand and community, not to a base-layer blockchain or a DeFi protocol with measurable cash flows. Its meaningful segment is attention-driven consumer and meme assets. It has market-cap rank 104 but unusually high visibility at search rank fifteen, 145k watchlists, and $210M of daily volume. The snapshot contains no public repository, TVL, protocol revenue, or audit record, so it cannot show an operating network behind the brand. The data supports strong recognition and liquidity, not a technical utility claim.",
+    "evidence": "documented",
+    "sources": ["coingecko", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "aptos": {
+    "symbol": "APT",
+    "purpose": "A smart-contract layer-one built around the Move language and parallel transaction execution, with APT used for fees, staking, and governance. It competes with newer high-throughput platforms. Its on-chain footprint is modest but real: $55M locked, $1.1B of stablecoins issued, and $88k of monthly protocol revenue. The snapshot has no linked repository, so development is not measured despite the chain's technical focus. At market-cap rank 105, it has search rank eighty-one and 139k watchlists, indicating attention somewhat ahead of its capitalisation standing.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "aerodrome-finance": {
+    "symbol": "AERO",
+    "purpose": "The governance and incentive token of Aerodrome, a decentralised exchange and liquidity marketplace on Base. Liquidity providers and voters direct incentives between trading pools, so exchange fees and volume would be the relevant proof of its role. This snapshot records none of those protocol measures, nor a public repository or audit record. AERO nonetheless has market-cap rank 107, search rank eighty-six, 83k watchlists, and $34M of daily token volume. The description establishes its function, while the dataset cannot assess the exchange's actual operating scale.",
+    "evidence": "documented",
+    "sources": ["coingecko", "web", "metrics"],
+    "generated": "2026-09-04"
+  },
+  "blockstack": {"symbol":"STX","purpose":"A Bitcoin-adjacent smart-contract network where Stacks transactions settle through Bitcoin and STX pays for execution. Its chain remains small, with $85M locked and $12M of stablecoins at market-cap rank 108. Search rank forty-one and 102k watchlists show recognition, but the snapshot has no public development signal or protocol revenue.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "bianrensheng": {"symbol":"币安人生","purpose":"A meme token with no documented protocol function in the available data. Its relevant evidence is attention and liquidity: it ranks 109 by market capitalisation but only 987th in search interest, with 2k watchlists and $4.7M daily volume. There is no repository, TVL, revenue, audit, or project description to support a broader claim.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"},
+  "injective-protocol": {"symbol":"INJ","purpose":"A layer-one network focused on on-chain financial markets, where INJ supports staking, governance, and fees. Its measurable footprint is modest at $9M locked and $12M of stablecoins, but attention is stronger at search rank fifty-nine and 194k watchlists. The linked demo repository is not enough to assess development, so this profile does not treat its zero recent commits as project inactivity.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "virtual-protocol": {"symbol":"VIRTUAL","purpose":"A token associated with Virtuals Protocol, which creates and coordinates AI agents on public networks. It is an AI-platform token, not a general-purpose chain. The pipeline records $670k of monthly and $18.2M of annual protocol revenue, but no repository or on-chain usage metric. At rank 116, search rank seventy-five and 102k watchlists indicate meaningful attention.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "pyth-network": {"symbol":"PYTH","purpose":"A price-oracle network that distributes market data to smart contracts, with PYTH used in governance and network economics. Chain TVL is not the right measure for this infrastructure. The snapshot lacks its usage and development figures, but shows search rank thirty-six, 106k watchlists, and $55M daily token volume. Its function is documented while operating reach is not measured here.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "layerzero": {"symbol":"ZRO","purpose":"A cross-chain messaging protocol for applications that need to pass messages and assets between networks; ZRO governs the protocol. It is interoperability infrastructure rather than a chain with native TVL. The available data has no revenue, code, or usage count, but search rank sixty-one, 83k watchlists, and $64M daily volume show recognised market presence.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "fetch-ai": {"symbol":"FET","purpose":"The token of the Artificial Superintelligence Alliance, aimed at decentralised AI agents and services. It competes in AI infrastructure, where direct network work would be the useful metric; none is captured here. The linked Fetch repository has no recent commits but 51 contributors, an incomplete development signal. FET has rank 119, search rank ninety-five, and 247k watchlists.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "midnight-3": {"symbol":"NIGHT","purpose":"A privacy-focused blockchain project whose NIGHT token is intended for network economics and governance. The snapshot records no chain activity, repository, revenue, or audit, leaving the stated privacy design untested. It has market-cap rank 120 but low public attention at search rank 726 and 13k watchlists. The available evidence supports only the basic role.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "falcon-finance-ff": {"symbol":"FF","purpose":"A governance token connected to Falcon Finance and its stablecoin-oriented DeFi products. The pipeline records $245k of monthly and $5.5M of annual protocol revenue, but no TVL, reserve, repository, or audit data. It ranks 121 by capitalisation and search rank fifty-six, while only 3k users watch it. Activity is recorded, but the system behind it is not independently measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "celestia": {"symbol":"TIA","purpose":"A modular data-availability network that lets other chains publish and verify transaction data without executing their applications. TIA pays for this infrastructure and secures it through staking. The pipeline records only $2k monthly revenue, but development is active at 30 commits from 114 contributors. At rank 123 it has 139k watchlists; direct data-availability use is not measured.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "pendle": {"symbol":"PENDLE","purpose":"A DeFi protocol for separating and trading the principal and yield components of yield-bearing assets; PENDLE governs it. Its relevant proof would be trading and fee data, which the snapshot does not contain. The public core repository has four recent commits from eleven contributors. It ranks 127, with search rank ninety-eight and 82k watchlists.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "kite-2": {"symbol":"KITE","purpose":"A token whose available data provides no reliable public description, repository, chain metrics, or operating evidence. It ranks 129 by capitalisation but is only 752nd in search interest, with 4k watchlists and $12M daily volume. Those market figures do not establish what the project does, so the summary remains intentionally limited.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"},
+  "lido-dao": {"symbol":"LDO","purpose":"The governance token of Lido, a liquid-staking protocol that issues transferable staking positions. Its economic evidence is unusually strong: $41.8M of monthly and $657M of annual protocol revenue. The core repository remains active at seven commits from 58 contributors. LDO ranks 132, but its low search rank of 989 and 73k watchlists show less retail attention than the protocol's revenue suggests.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "sei-network": {"symbol":"SEI","purpose":"A smart-contract layer-one built for trading-oriented applications, with SEI used for fees, staking, and governance. Its chain has $33M locked and $299M of issued stablecoins, a modest platform footprint at rank 133. Revenue is only $590 monthly in the pipeline. Search rank 102 and 182k watchlists show attention, but no repository is linked to measure development.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "sun-token": {"symbol":"SUN","purpose":"A governance and incentive token associated with TRON-based DeFi and the SunSwap exchange. The snapshot does not record protocol fees, trading volume, code activity, or audits, so it cannot assess that role. SUN ranks 134 but has search rank 341 and 21k watchlists, indicating limited broader attention. The function is documented; operating evidence is absent.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"},
+  "gnosis": {"symbol":"GNO","purpose":"The token used for governance and staking around Gnosis Chain and its infrastructure, including Safe smart accounts. The chain has $102M locked and $43M of stablecoins, a mid-sized footprint at rank 135. The linked Safe repository has three commits from 68 contributors, but it does not measure every Gnosis component. Search rank 401 and 80k watchlists show specialised interest.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "bittorrent": {"symbol":"BTT","purpose":"A token for BitTorrent's decentralised file-sharing and storage products, intended to reward network participants rather than operate a DeFi chain. The snapshot shows only $77k locked and $332k stablecoins. Its linked website repository is not a useful measure of protocol development. BTT ranks 139 but has low public attention at search rank 4,259 and 62k watchlists.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "bonk": {"symbol":"BONK","purpose":"A Solana meme token whose significance is community attention and liquidity rather than a standalone operating protocol. It ranks 141, with search rank 119, 210k watchlists, and $53M daily volume. The snapshot has no repository, revenue, TVL, or audit record. Those figures support a visible meme asset, but not a technical or financial utility claim.","evidence":"documented","sources":["coingecko","metrics"],"generated":"2026-09-05"},
+  "terra-luna": {"symbol":"LUNC","purpose":"The remaining token of Terra Classic, the chain that continued after Terra's original stablecoin system failed. It still supports staking and governance on that separate network, but should not be confused with the earlier system's intended stablecoin design. The snapshot shows $591k locked and no revenue, while the linked core repository has no recent commits. It ranks 142 and retains 358k watchlists.","evidence":"documented","sources":["coingecko","github","web","metrics"],"generated":"2026-09-05"},
+  "plasma": {"symbol":"XPL","purpose":"A smart-contract chain designed around stablecoin transfers and payments, with XPL used for its network economics. It has already accumulated $589M locked and $929M of issued stablecoins at rank 145, though the pipeline records only $11k monthly revenue. Search rank sixty-five and 29k watchlists show recognition. No repository is linked, so development and the claimed payment use are not measured directly.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"trust-wallet-token":{"symbol":"TWT","purpose":"The utility and governance token associated with Trust Wallet, a self-custody wallet application rather than a blockchain protocol. The snapshot has no code, fee, or on-chain usage measure for the wallet. TWT ranks 146, with search rank eighty-three, 59k watchlists, and $21M daily volume; those figures show token liquidity, not wallet adoption.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"syrup":{"symbol":"SYRUP","purpose":"The governance and incentive token of Maple Finance, an on-chain credit protocol aimed at lending markets. Its relevant evidence would be loans, defaults, and protocol revenue, none of which this snapshot records. SYRUP ranks 148, has search rank 147 and 18k watchlists. The role is documented, but the available data cannot assess current credit activity.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"decred":{"symbol":"DCR","purpose":"A proof-of-work cryptocurrency with a separate proof-of-stake voting layer, using DCR for transfers, staking, and governance. It belongs with payment and store-of-value networks. The snapshot records no TVL, revenue, or useful development metric; rank 149, search rank 759, and 21k watchlists show a specialised, low-attention community.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"tezos":{"symbol":"XTZ","purpose":"A proof-of-stake smart-contract chain whose protocol upgrades are decided through on-chain governance. XTZ pays fees and is staked to secure the network. Its footprint is modest at $20M locked and $34M of stablecoins, with only $9k monthly revenue. At rank 155 it has 129k watchlists; the data shows an operating chain but limited DeFi scale.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"conflux-token":{"symbol":"CFX","purpose":"The native token of Conflux, a smart-contract network designed to connect decentralised applications with Asian markets. CFX pays fees and supports staking. The snapshot records $7M locked and $20M of stablecoins, a small platform footprint at rank 156. Search rank 821 and 42k watchlists show limited attention; no repository is linked to assess development.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"ethereum-name-service":{"symbol":"ENS","purpose":"The governance token of Ethereum Name Service, which maps human-readable names to Ethereum addresses and other records. It is infrastructure, so registration and renewal income are more relevant than chain TVL. The pipeline records $354k monthly revenue but no repository activity. ENS ranks 159, with search rank 140 and 54k watchlists.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"floki":{"symbol":"FLOKI","purpose":"A meme token that has expanded into branded games and DeFi products, but whose market identity remains primarily attention-driven. It has no measured TVL, revenue, code, or audit evidence in this snapshot. At rank 160, search rank seventy-eight, and 201k watchlists, the data supports strong recognition rather than a proven operating utility.","evidence":"documented","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"optimism":{"symbol":"OP","purpose":"An Ethereum layer-two rollup whose OP token governs its protocol and public-goods funding, rather than paying ordinary gas fees. Its chain is substantial with $436M locked and $509M of stablecoins. It ranks 165, has search rank seventy-seven and 144k watchlists. The snapshot has no linked repository, so development is not measured here.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"artificial-inu-3":{"symbol":"AI","purpose":"A meme token with an AI-themed name but no reliable public description or measurable network function in the available data. It ranks 166 and has search rank sixty-nine with $63M daily volume, yet no watchlist, repository, TVL, or revenue data. Attention alone does not establish utility.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"raydium":{"symbol":"RAY","purpose":"The governance and incentive token of Raydium, a Solana decentralised exchange and automated market maker. Fees and DEX volume would test its position, but are absent here. RAY ranks 167 with 100k watchlists and search rank 138; the role is known but operating scale is not measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"jasmycoin":{"symbol":"JASMY","purpose":"A token for Jasmy's data-focused platform, intended to give users control over personal and IoT data. The snapshot contains no network activity, repository, or revenue evidence. At rank 170, search rank seventy and 90k watchlists show attention, but not measured adoption of its data product.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"jito-governance-token":{"symbol":"JTO","purpose":"The governance token of Jito, a Solana liquid-staking and MEV infrastructure protocol. Its relevant proof would be staking deposits and protocol fees, neither recorded here. JTO ranks 172, has search rank 319 and 37k watchlists. The summary establishes its role, while its operating scale remains unmeasured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"convex-finance":{"symbol":"CVX","purpose":"The governance token of Convex Finance, a protocol that concentrates liquidity-provider incentives around Curve pools. The pipeline records $1.9M of monthly revenue, but no TVL or code activity. CVX ranks 173, with search rank 231 and 33k watchlists; the revenue supports activity but not a complete view of risk or scale.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"dogwifcoin":{"symbol":"WIF","purpose":"A Solana meme token with no stated service beyond its community identity and trading attention. It ranks 175, with search rank sixty-seven, 119k watchlists, and $58M daily volume. No repository, TVL, revenue, or audit appears in the snapshot, so the data supports liquidity and recognition only.","evidence":"documented","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"compound-governance-token":{"symbol":"COMP","purpose":"The governance token of Compound, an on-chain lending protocol where suppliers provide assets and borrowers post collateral. Its relevant measures are loans and fees, unavailable in this snapshot. COMP ranks 176, with search rank 215 and 95k watchlists. The purpose is documented, but current lending scale and development are not measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"kaia":{"symbol":"KAIA","purpose":"The native token of Kaia, a smart-contract chain formed around the former Klaytn and Finschia networks. It pays fees and supports staking. The chain has $9M locked and $215M of stablecoins, but no revenue or repository measurement. At rank 177, search rank 301 and 9k watchlists indicate limited public attention.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"marscoin-4":{"symbol":"MARSCOIN","purpose":"A token whose available data gives no reliable project description, technical documentation, or on-chain operating evidence. It ranks 178 and records $190M daily volume with search rank sixty-six, but no watchlists, repository, TVL, or revenue data. The market figures alone cannot establish purpose or fundamental use.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"starknet":{"symbol":"STRK","purpose":"An Ethereum layer-two network based on zero-knowledge validity proofs, with STRK used for governance, staking, and fees. It has $161M locked and $149M of stablecoins, a meaningful but mid-sized rollup footprint. At rank 182 it has 68k watchlists; no linked repository is available to measure development.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"the-graph":{"symbol":"GRT","purpose":"A decentralised indexing network that lets applications query blockchain data through subgraphs; GRT pays and coordinates indexers. It is data infrastructure, not a chain where TVL applies. The pipeline records $23k monthly revenue but no usage count or repository. GRT ranks 183, with 230k watchlists and search rank 199.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"eigenlayer":{"symbol":"EIGEN","purpose":"The governance token associated with EigenLayer and EigenCloud, which let Ethereum stake secure additional services through restaking. Its fundamental evidence should be restaked capital and service fees; the snapshot records only $278k monthly revenue. EIGEN ranks 186, with search rank 165 and 29k watchlists. No repository or direct restaking measure is present.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"iota":{"symbol":"IOTA","purpose":"A distributed-ledger network designed for machine-to-machine transactions and data, with IOTA used for network value transfer. Its visible chain footprint is small at $1.4M locked and $486k of stablecoins. At market-cap rank 187 it has 127k watchlists and search rank 205. The snapshot has no repository or protocol revenue, so it cannot measure real device or data-network use.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"doublezero":{"symbol":"2Z","purpose":"A token whose available material provides no reliable public explanation, chain activity, source repository, or revenue evidence. It ranks 188 but has only 3k watchlists and search rank 1,373. The market listing alone cannot establish what the project does or whether its network has use, so this summary deliberately remains limited.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"theta-token":{"symbol":"THETA","purpose":"The token of Theta Network, which targets decentralised video delivery and edge computing; THETA supports staking and network governance. The snapshot records $309k locked and $37k of stablecoins, a small financial footprint at rank 190. It has 169k watchlists and search rank 250, but no public development or usage metric, so video-network adoption is not demonstrated here.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"arweave":{"symbol":"AR","purpose":"A decentralised data-storage network designed to preserve data through a one-time payment model, with AR paying storage providers. It belongs with storage infrastructure rather than DeFi. The snapshot has no chain TVL, revenue, usage, or repository measure, so it cannot test actual stored data. AR ranks 192, with search rank 141 and 107k watchlists, showing recognition without a direct operating measure.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"axie-infinity":{"symbol":"AXS","purpose":"The governance token of Axie Infinity, a blockchain game where the token governs parts of the game economy. It should be judged by active players and game revenue rather than chain TVL. The pipeline records $121k monthly protocol revenue but no game-usage or code metric. AXS ranks 199, with 254k watchlists and search rank 513; recorded revenue confirms some activity, not the health of its player base.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"thorchain":{"symbol":"RUNE","purpose":"A cross-chain liquidity protocol that lets users swap native assets between chains without wrapped versions; RUNE secures liquidity and network economics. It is DeFi infrastructure, so fees and revenue matter more than chain TVL. The snapshot records $29M locked and $936k monthly revenue, supporting a working protocol. RUNE ranks 203, with 150k watchlists and search rank 190; no repository is linked to measure development.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"elrond-erd-2":{"symbol":"EGLD","purpose":"The native token of MultiversX, a smart-contract chain aimed at scalable applications; EGLD pays fees, supports staking, and participates in governance. Its chain has $14M locked and $7.8M of stablecoins, a small platform footprint at rank 211. Search rank fifty-eight and 149k watchlists show attention, but no repository or revenue figure is linked to assess development or actual application use.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"neo":{"symbol":"NEO","purpose":"A long-running smart-contract platform whose NEO token participates in governance and network economics. It is a base-layer chain, but this snapshot records only $1.2M locked and no stablecoin issuance or revenue. NEO ranks 212, with 83k watchlists and search rank 225. The data confirms it remains listed and recognised, but does not show significant current DeFi use or development activity.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"ecash":{"symbol":"XEC","purpose":"A Bitcoin-derived proof-of-work payment network that positions itself around low-cost electronic cash. Its appropriate measures are transfers and merchant use, neither captured here. XEC ranks 215, has 57k watchlists and search rank 1,251, while no TVL, revenue, repository, or usage data is recorded. The network purpose is documented; current payment adoption is not.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"decentraland":{"symbol":"MANA","purpose":"The governance and utility token of Decentraland, a virtual-world platform where MANA is used around land and in-world commerce. Game and user activity would be the meaningful evidence, not chain TVL. The snapshot has no such measure, repository, or revenue data. MANA ranks 216, with 282k watchlists and search rank 237, confirming recognition but not current virtual-world use.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"chiliz":{"symbol":"CHZ","purpose":"The token of Chiliz and Socios, a sports-fan engagement network used around fan tokens and platform participation. It is consumer infrastructure rather than a financial base layer. The chain has only $1.9M locked and no revenue measure in the snapshot. CHZ ranks 217, with 170k watchlists and search rank 467; the role is clear, while fan-platform activity is not measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"apecoin":{"symbol":"APE","purpose":"A governance and utility token associated with the ApeCoin DAO and the Bored Ape community. It belongs with consumer and community assets, where actual product use would be more relevant than chain TVL. The snapshot records $2.8M locked and $400k of stablecoins but no revenue or repository. APE ranks 218, with 116k watchlists and search rank 167, showing attention rather than a measured operating economy.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"kamino":{"symbol":"KMNO","purpose":"The governance token of Kamino, a Solana DeFi protocol combining lending, liquidity, and automated strategies. Its meaningful evidence would be deposits, borrowing, fees, and audits; none is carried in this snapshot. KMNO ranks 222, has 17k watchlists and search rank 516. The purpose is documented, but the available data does not establish current protocol scale.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"safepal":{"symbol":"SFP","purpose":"The utility token of SafePal, a self-custody wallet and related services, rather than a blockchain protocol. The snapshot provides no wallet adoption, code, fee, or audit measure. SFP ranks 225, with 31k watchlists and search rank 986. Those figures show a liquid listed token, but they cannot independently assess the wallet product or its user base.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"vaulta":{"symbol":"A","purpose":"A token for Vaulta, for which the available market data provides no reliable public purpose, technical documentation, or operating metric. It ranks 231, with only 2.5k watchlists and search rank 365. The snapshot contains no chain TVL, revenue, repository, or audit information, so it cannot support a more specific description.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"1inch":{"symbol":"1INCH","purpose":"The governance token of 1inch, a decentralised exchange aggregator that searches liquidity across venues for swaps. Its appropriate evidence is routed trade volume and fees, neither available here. 1INCH ranks 232, has 118k watchlists and search rank 212. The mechanism is documented, but the snapshot does not establish its present exchange activity or development pace.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"zama":{"symbol":"ZAMA","purpose":"A token associated with Zama's encrypted-computing and fully homomorphic encryption infrastructure. It belongs with privacy technology, where deployments and developer use would matter more than DeFi TVL. The snapshot has none of those metrics; it records rank 233, search rank 175, and 5k watchlists. The stated technical role is documented, but operating adoption is not measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"havven":{"symbol":"SNX","purpose":"The governance and collateral token of Synthetix, a protocol for issuing and trading synthetic on-chain assets. Fees, collateral, and trading volume would be its central evidence, but are absent from this snapshot. SNX ranks 237, with 123k watchlists and search rank 335. The protocol role is documented while current scale and code activity remain unmeasured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"zencash":{"symbol":"ZEN","purpose":"A privacy-oriented blockchain token associated with Horizen, where encrypted transfers and sidechain infrastructure are the stated focus. Privacy use cannot be measured directly from public chain metrics. ZEN ranks 238, with search rank 124 and 34k watchlists; no TVL, revenue, or repository data is recorded. The profile therefore confirms the intended role, not network usage.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"stp-network":{"symbol":"AWE","purpose":"A token for AWE Network, whose available data supplies no reliable project description or measurable operating activity. It ranks 240, with search rank 1,253 and 8k watchlists. There is no recorded chain TVL, protocol revenue, audit, or public repository. The market listing is insufficient to describe a concrete utility, so evidence remains thin.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"the-sandbox":{"symbol":"SAND","purpose":"The utility and governance token of The Sandbox, a virtual-world platform for user-made games and digital land. Player activity and creator revenue would be decisive, but the snapshot has none. SAND ranks 246, with 281k watchlists and search rank 130, supporting brand recognition rather than measured virtual-world use.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"sonic-3":{"symbol":"S","purpose":"The native token of Sonic, a smart-contract chain descended from Fantom, used for fees, staking, and governance. It has $16M locked and $144M of stablecoins, a small platform footprint at rank 249. The snapshot records only $2k monthly revenue; 47k watchlists and search rank 131 show moderate attention.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"chip-2":{"symbol":"CHIP","purpose":"A token for which the available data provides no reliable technical description or public operating evidence. The pipeline records $1.9M of monthly revenue but no repository, TVL, or explanation tying it to a specific service. At rank 253 it has search rank eighty-eight and 4k watchlists. Evidence remains thin.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"helium":{"symbol":"HNT","purpose":"The token of Helium, a decentralised wireless network where operators provide coverage and earn network rewards. Its relevant proof is active devices and data transfer, neither recorded here. HNT ranks 254, with 129k watchlists and search rank twenty-six. The role is documented, but the snapshot does not measure wireless-network use.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"immutable-x":{"symbol":"IMX","purpose":"The token of Immutable, an Ethereum gaming infrastructure network supporting game assets and marketplace activity. Its chain has $11M locked and $11M of stablecoins, a small footprint at rank 255. Search rank 247 is modest; no repository or gaming-activity measure is linked, so adoption is not established.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"golem":{"symbol":"GLM","purpose":"A token for Golem, a marketplace intended to match spare computing capacity with users who need it. It belongs to decentralised computing infrastructure rather than DeFi. The snapshot has no job volume, revenue, or code activity. GLM ranks 259, with search rank 809 and 29k watchlists, so it does not demonstrate current compute-market use.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"basic-attention-token":{"symbol":"BAT","purpose":"The token used in the Brave browser's attention and advertising system, intended to reward users and publishers. Browser adoption and advertising flows would be the relevant evidence, but are absent. BAT ranks 263, with 122k watchlists and search rank 988. Its role is clear while present economic activity is not measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"four":{"symbol":"FORM","purpose":"A token whose available market record contains no reliable project description, chain data, repository, or operating metric. It ranks 265, has search rank 176 and 3k watchlists. Those limited market signals do not show what FORM does, so the profile remains deliberately narrow.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"circle-internet-group-bstock":{"symbol":"CRCLB","purpose":"A tokenised representation associated with Circle Internet Group stock, not an independent blockchain protocol. Its relevant questions are issuer structure, custody, and the relationship to the underlying security, none measured here. It ranks 268, with only 132 watchlists. The available data does not support a broader utility claim.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"meteora":{"symbol":"MET","purpose":"The governance token of Meteora, a Solana liquidity protocol and automated market maker. Trading volume, fees, and supplied liquidity would test its role, but this snapshot contains none. MET ranks 271, with 7k watchlists and search rank 249. The function is documented while operating scale is unmeasured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"zksync":{"symbol":"ZK","purpose":"The governance token of zkSync, an Ethereum layer-two based on validity proofs. Its chain has $15M locked, $38M of stablecoins, and $9k monthly revenue, a modest rollup footprint at rank 279. Search rank 114 and 45k watchlists show attention; no repository is linked to measure development.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"genius-3":{"symbol":"GENIUS","purpose":"A token with no reliable public description or measurable network activity in the available data. It ranks 278 but has only 2k watchlists and search rank 5,584. There is no TVL, revenue, repository, or audit evidence, so the listing is insufficient to infer a purpose.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"dydx-chain":{"symbol":"DYDX","purpose":"The governance token of the dYdX Chain, a decentralised perpetuals exchange. Exchange fees, open interest, and volume would be the relevant proof. The snapshot records $70M locked but no revenue or trading volume. DYDX ranks 280, with search rank 411 and 30k watchlists; the operating position cannot be assessed fully.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"mina-protocol":{"symbol":"MINA","purpose":"A proof-of-stake blockchain built around a compact zero-knowledge proof of its state, with MINA used for fees and staking. The snapshot has no chain usage, revenue, or repository measure. At rank 284 it has 100k watchlists and search rank 120, showing recognition rather than measured application use.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"sentient":{"symbol":"SENT","purpose":"A token associated with Sentient's decentralised AI initiative. The relevant evidence would be deployed models, users, or network revenue, none of which is available in this snapshot. SENT ranks 285, has 2k watchlists and search rank 399. Its stated category is known, while actual adoption is not measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"prometeus":{"symbol":"PROM","purpose":"A token associated with Prom, a smart-contract and data infrastructure project. The snapshot records $783k locked but no revenue, repository, or direct application-use metric. PROM ranks 289, with 12k watchlists and search rank thirty-five. The data suggests attention but does not establish how the network is being used.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"qtum":{"symbol":"QTUM","purpose":"A proof-of-stake smart-contract chain combining Bitcoin-like transaction accounting with an Ethereum-compatible execution model. Its snapshot has no TVL, revenue, or repository activity. QTUM ranks 294, with 43k watchlists and search rank 359. The technical purpose is documented, but current application use is not shown.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"plume":{"symbol":"PLUME","purpose":"The native token of Plume, a chain focused on tokenised real-world assets. It has $6.6M locked, $4.8M of stablecoins, and only $2k monthly revenue, a small operating footprint at rank 295. Search rank 750 and 25k watchlists show limited attention. No repository is linked to measure development.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"gala":{"symbol":"GALA","purpose":"The utility token of Gala's entertainment and gaming network, used across game and media products. User activity and content revenue would be its relevant evidence, but are not captured. The chain has $4M locked at rank 300, with 279k watchlists and search rank 310. Recognition is visible; operating use is not.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"0x":{"symbol":"ZRX","purpose":"The governance token of 0x, an open protocol for decentralised exchange and trade routing on Ethereum-compatible networks. Its useful measures are integrated trading volume and protocol fees, absent here. ZRX ranks 303, with 56k watchlists and search rank 354. The protocol mechanism is documented, while current economic activity is not measured.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"digibyte":{"symbol":"DGB","purpose":"A proof-of-work payment network focused on low-cost transfers and long-running decentralised operation. Its useful evidence would be payment use and development, neither measured here. DGB remains a listed network with community attention, but the snapshot has no TVL, revenue, repository, or transfer-activity measure.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"reserve-rights-token":{"symbol":"RSR","purpose":"The governance and recapitalisation token of Reserve, a protocol for asset-backed stablecoins and currency baskets. Reserve activity, collateral, and stablecoin circulation would matter most, but are not captured here. RSR's documented function is clear; the snapshot does not independently measure the system it governs.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"ordinals":{"symbol":"ORDI","purpose":"A token associated with the Ordinals ecosystem, where data and inscriptions are attached to Bitcoin units. It is a Bitcoin-native collectible and inscription asset rather than a DeFi protocol. The snapshot provides no protocol revenue, repository, or usage measure, so market interest cannot establish its lasting utility.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"yearn-finance":{"symbol":"YFI","purpose":"The governance token of Yearn, a DeFi system that routes deposited assets into yield strategies. Its relevant evidence is assets managed, strategy performance, and fees, which are absent from the snapshot. The protocol role is documented, but current operating scale and development cannot be assessed from these data.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"banana-for-scale-2":{"symbol":"BANANAS31","purpose":"A meme token with no reliable public operating purpose in the available data. Its listing and trading interest do not show a network, product, or revenue-generating protocol. No repository, TVL, audit, or project description is available here, so the profile remains limited to that uncertainty.","evidence":"thin","sources":["coingecko","metrics"],"generated":"2026-09-05"}
+  ,"gas":{"symbol":"GAS","purpose":"The utility token used to pay for computation and transactions on the Neo network. It is generated by or associated with NEO's network economics, so its value proposition is tied to chain use rather than an independent protocol. The snapshot does not measure current Neo transaction activity or GAS distribution.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"beam-2":{"symbol":"BEAM","purpose":"The token associated with Beam, a gaming-focused network and ecosystem. Its useful evidence would be active games, players, and game-economy revenue, none of which appears in the snapshot. The basic gaming role is documented, but the available market data cannot verify current adoption or development.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"rif-token":{"symbol":"RIF","purpose":"The utility token of Rootstock Infrastructure Framework, a set of services built around the Bitcoin-connected Rootstock network. It belongs to infrastructure, where actual service use would be decisive. The snapshot has no activity, revenue, or repository metric, so it documents the intended role but not current operating scale.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"orca":{"symbol":"ORCA","purpose":"The governance token of Orca, a Solana automated market maker and decentralised exchange. Trading volume, fees, and liquidity are the relevant measures, but are absent from this snapshot. The exchange role is documented; without those measures the profile cannot assess its current position among Solana trading venues.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  ,"gmx":{"symbol":"GMX","purpose":"The governance and value-accrual token of GMX, a decentralised perpetuals exchange. Open interest, fees, and trading volume would show whether the venue is working, but the snapshot does not carry them. GMX's purpose is documented while its current derivatives-market activity remains unmeasured in this profile.","evidence":"documented","sources":["coingecko","web","metrics"],"generated":"2026-09-05"}
+  }
+}
