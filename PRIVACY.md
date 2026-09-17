@@ -54,6 +54,11 @@ any user. The gateway keeps no logs that would allow individual users to be
 distinguished; it exists because the data providers' licence terms do not
 permit the data to be redistributed publicly.
 
+The gateway runs on the infrastructure of Cloudflare, Inc., which processes
+connection data (including IP addresses) on our behalf as our hosting
+provider, under its own
+[privacy policy](https://www.cloudflare.com/privacypolicy/).
+
 ## Sharing with third parties
 
 We do not share, sell or transfer any data, because we hold none.
